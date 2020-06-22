@@ -1,5 +1,8 @@
 steps:
   - label: "Example Test"
     command: echo "Hello!"
-  - label: "Real Tests"
-    command: mvn test |tee /home/ubuntu/test.log
+  - label: "compile Tests"
+    command: mvn clean compile
+  - label: "Build app"
+    command: mvn install
+  
