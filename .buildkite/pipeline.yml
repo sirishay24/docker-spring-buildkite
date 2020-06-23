@@ -5,7 +5,5 @@ steps:
     command: mvn clean compile
   - label: "Build app"
     command: mvn install
-  - label: "Build docker image"
-    command: docker build -f Dockerfile -t docker-springboot-buildkite-image .
-
+ 
   
