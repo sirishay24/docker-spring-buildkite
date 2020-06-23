@@ -5,5 +5,4 @@ steps:
     command: mvn clean compile
   - label: "Build app"
     command: mvn install
-  - label: "test docker"
-    command: docker images
+
