@@ -6,7 +6,7 @@ steps:
   - label: "Build app"
     command: mvn install
   - label: "pwd"
-  - command: pwd
+    command: pwd
   - label: "create docker image"
     command: docker build -f Dockerfile -t docker-springboot-buildkite-image .
 
